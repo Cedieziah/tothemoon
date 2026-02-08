@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti';
 import { Volume2, VolumeX } from 'lucide-react';
 
 // --- Assets / Placeholders ---
-const LIGHTHOUSE_IMG = "🏯"; 
+const LIGHTHOUSE_IMG = "/lighthouse.svg"; 
 const PLATYPUS_IMG = "🦆"; // Using Duck as Platypus proxy
 const RABBIT_IMG = "🐇";
 const BACKPACK_IMG = "🎒";
@@ -186,9 +186,11 @@ export default function App() {
             exit={{ opacity: 0 }}
             className="flex flex-col items-center justify-center h-full pb-20"
           >
-            <div className="text-[8rem] md:text-[12rem] mb-4 animate-pulse drop-shadow-[0_0_25px_rgba(255,255,0,0.3)]">
-              {LIGHTHOUSE_IMG}
-            </div>
+            <img
+              src={LIGHTHOUSE_IMG}
+              alt="Lighthouse"
+              className="w-40 h-40 md:w-56 md:h-56 mb-4 animate-pulse drop-shadow-[0_0_25px_rgba(255,255,0,0.3)]"
+            />
             
             <DialogueBox 
               text="Searching memory banks... Subject: Ken... Status: Found."
@@ -337,9 +339,11 @@ export default function App() {
              <h1 className="font-press-start text-3xl md:text-5xl text-center text-pink-400 mb-8 animate-bounce leading-normal drop-shadow-lg px-4">
                  See you at the lighthouse. <br/> ❤️
              </h1>
-             <div className="text-[10rem] md:text-[15rem] animate-pulse drop-shadow-[0_0_30px_rgba(255,255,255,0.4)]">
-                 {LIGHTHOUSE_IMG}
-             </div>
+             <img
+               src={LIGHTHOUSE_IMG}
+               alt="Lighthouse"
+               className="w-56 h-56 md:w-80 md:h-80 animate-pulse drop-shadow-[0_0_30px_rgba(255,255,255,0.4)]"
+             />
          </motion.div>
         )}
 
