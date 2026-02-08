@@ -191,7 +191,7 @@ export default function App() {
             </div>
             
             <DialogueBox 
-                text="Searching memory banks... Subject: Ken (River)... Status: Found."
+              text="Searching memory banks... Subject: Ken... Status: Found."
                 onComplete={() => setIntroFinished(true)} 
             />
             
