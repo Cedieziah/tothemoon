@@ -8,7 +8,7 @@ import { Volume2, VolumeX } from 'lucide-react';
 const LIGHTHOUSE_IMG = "/lighthouse.svg"; 
 const PLATYPUS_IMG = "🦆"; // Using Duck as Platypus proxy
 const RABBIT_IMG = "🐇";
-const BACKPACK_IMG = "🎒";
+const VOLLEYBALL_IMG = "🏐";
 
 // --- Components ---
 
@@ -119,7 +119,7 @@ export default function App() {
   const mementos = [
     { id: 'platypus', icon: PLATYPUS_IMG, label: 'Platypus', msg: "For the times you made me smile.", x: '20%', y: '40%' },
     { id: 'rabbit', icon: RABBIT_IMG, label: 'Paper Rabbit', msg: "For every distinct part of you that I love.", x: '70%', y: '30%' },
-    { id: 'backpack', icon: BACKPACK_IMG, label: 'Backpack', msg: "For the adventures we have yet to take.", x: '50%', y: '70%' },
+    { id: 'volleyball', icon: VOLLEYBALL_IMG, label: 'Volleyball', msg: "For every game we played and every moment we shared.", x: '50%', y: '70%' },
   ];
 
   const handleAudioToggle = () => {
