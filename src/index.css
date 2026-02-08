@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-press-start: "Press Start 2P", system-ui;
+  --font-vt323: "VT323", monospace;
+  --color-dark-blue: #0a0a2a;
+  --color-star-yellow: #fff700;
+  --color-teal-accent: #00d2ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark-blue);
+  color: white;
+  font-family: var(--font-vt323);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Custom Utilities */
+.pixel-font {
+  font-family: var(--font-press-start);
+}
+
+.typewriter-cursor::after {
+  content: "▋";
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  margin-left: 4px;
+  color: var(--color-teal-accent);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Star Animation */
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle var(--duration, 2s) ease-in-out infinite;
+  opacity: var(--opacity, 0.8);
+}
+
+@keyframes twinkle {
+  0%, 100% { transform: scale(1); opacity: var(--opacity, 0.8); }
+  50% { transform: scale(1.5); opacity: 1; }
+}

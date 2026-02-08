@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "buildCommand": "npm install && npm run build",
+    "publicPath": "dist"
+  }
+}
